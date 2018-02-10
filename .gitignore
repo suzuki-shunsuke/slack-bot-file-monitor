@@ -1,0 +1,4 @@
+vendor
+env.sh
+node_modules
+*.log
