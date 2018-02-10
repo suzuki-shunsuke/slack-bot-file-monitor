@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  bot:
+    image: golang:1.9.4
+    volumes:
+      - .:/go/src/github.com/suzuki-shunsuke/slack-bot-file-monitor
+    command: bash entrypoint.sh
+    working_dir: /go/src/github.com/suzuki-shunsuke/slack-bot-file-monitor
+    environment:
+      - ENV=docker
+    # stdin_open: true
+    # tty: true
